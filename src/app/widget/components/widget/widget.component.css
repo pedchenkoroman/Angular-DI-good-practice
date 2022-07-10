@@ -1,3 +1,3 @@
-.widget {
-  display: flex;
+:host {
+  width: 100%;
 }

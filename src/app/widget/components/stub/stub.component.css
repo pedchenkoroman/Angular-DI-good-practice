@@ -5,16 +5,23 @@
   width: 100%;
 }
 
-.header {
-  width: 65%;
+.stub {
+  height: 30px;
+  border-radius: 10px;
   background: linear-gradient(
     90deg,
     rgb(126, 126, 126) 0%,
     rgb(173, 173, 173) 100%
   );
   animation: gradient 15s ease infinite;
-  height: 30px;
-  border-radius: 10px;
+}
+
+.header {
+  width: 65%;
+}
+
+.footer {
+  width: 100%;
 }
 
 @keyframes gradient {
@@ -27,16 +34,4 @@
   /* 100% {
     background-position: 0% 50%;
   } */
-}
-
-.footer {
-  width: 100%;
-  height: 30px;
-  background: linear-gradient(
-    90deg,
-    rgb(126, 126, 126) 0%,
-    rgb(173, 173, 173) 100%
-  );
-  animation: gradient 15s ease infinite;
-  border-radius: 10px;
 }
