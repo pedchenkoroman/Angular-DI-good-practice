@@ -1,1 +1,7 @@
-<app-stub></app-stub>
+<ng-container *ngIf="data; else stub">
+  <app-item [data]="data"></app-item>
+</ng-container>
+
+<ng-template #stub>
+  <app-stub></app-stub>
+</ng-template>

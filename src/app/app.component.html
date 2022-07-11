@@ -1,5 +1,5 @@
 <div class="container">
-  <app-widget></app-widget>
-  <app-widget></app-widget>
-  <app-widget></app-widget>
+  <app-widget [data]="first$ | async"></app-widget>
+  <app-widget [data]="second$ | async"></app-widget>
+  <app-widget [data]="third$ | async"></app-widget>
 </div>
