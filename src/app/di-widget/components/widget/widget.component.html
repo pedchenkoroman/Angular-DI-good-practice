@@ -1,0 +1,7 @@
+<ng-container *ngIf="data$ | async as data; else stub">
+  <app-item [data]="data"></app-item>
+</ng-container>
+
+<ng-template #stub>
+  <app-stub></app-stub>
+</ng-template>
