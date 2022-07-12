@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { WidgetComponent, StubComponent, ItemComponent } from './components';
+import {
+  WidgetItemComponent,
+  WidgetStubComponent,
+} from '../standalone-components';
+import { WidgetComponent } from './components';
 
 @NgModule({
-  imports: [CommonModule],
-  declarations: [WidgetComponent, StubComponent, ItemComponent],
+  imports: [CommonModule, WidgetItemComponent, WidgetStubComponent],
+  declarations: [WidgetComponent],
   exports: [WidgetComponent],
 })
 export class DiWidgetModule {}

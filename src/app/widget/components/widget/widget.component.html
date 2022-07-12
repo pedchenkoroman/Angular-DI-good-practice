@@ -1,7 +1,7 @@
 <ng-container *ngIf="data; else stub">
-  <app-item [data]="data"></app-item>
+  <widget-item [data]="data"></widget-item>
 </ng-container>
 
 <ng-template #stub>
-  <app-stub></app-stub>
+  <widget-stub></widget-stub>
 </ng-template>
