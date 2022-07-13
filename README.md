@@ -18,3 +18,5 @@ There is only one question left how to use it. Let's open `good-example` module.
 Last but not least let's open the `components` folder. There is only one root component. There are no dependencies in the constructor. Let's open `widget.template.html`. As you can see I use `<di-widget appFirstData></di-widget>` component and the `appFirstData` directive as an attribute. It is the directive that is responsible for overriding the value of `WIDGET_DATA`.
 
 ## Conclusion
+
+Using the Dependency Injection mechanism in Angular we don't clutter up the component redundant logic on how to receive and map some data. In addition to that, every directive has only one responsibility which means that we have complied with the principles of SOLID it is also really easy to cover its unit tests.
