@@ -13,6 +13,5 @@ import {
   providers: [WIDGET_DATA_PROVIDER],
 })
 export class WidgetComponent {
-  constructor(@Inject(WIDGET_DATA) public data$: Observable<WidgetData>) {
-  }
+  constructor(@Inject(WIDGET_DATA) public data$: Observable<WidgetData>) {}
 }
