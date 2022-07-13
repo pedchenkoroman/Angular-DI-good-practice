@@ -10,5 +10,6 @@ There are no differences between a good example and a bad example on the UI part
 
 There is a bad example module that imports the widget module and three services and declares one root component. The widget module has a widget component that has `@Input()`. An interface of `@Input()` is a pretty simple object `{text: string; count: number}`; So the bad thing is that every service is injected into the root component for passing data to the widgets. If you add ten widgets to the page you will inject ten services. In addition to that if you need to map the result before pass it to the widget you will have not only ten injectors but also the root component will contain lots of lines of code and this code does not relate to the root component.
 
-
 ## Good example
+
+First and foremost I would like to pay your attention to a DI widget module. There are some differences between this one and the widget module. If you open `widget-data.provider.ts` you will find that I create a token `WIDGET_DATA` that can be used in a DI Provider. Read more about it you can [here](https://angular.io/api/core/InjectionToken)
