@@ -19,4 +19,4 @@ Last but not least let's open the `components` folder. There is only one root co
 
 ## Conclusion
 
-Using the Dependency Injection mechanism in Angular we don't clutter up the component redundant logic on how to receive and map some data. In addition to that, every directive has only one responsibility which means that we have complied with the principles of SOLID it is also really easy to cover its unit tests.
+Using the Dependency Injection mechanism in Angular we don't clutter up the component redundant logic on how to receive and map some data. In addition to that, every directive has only one responsibility which means that we have complied with the principles of (SOLID)[https://en.wikipedia.org/wiki/SOLID] it is also really easy to cover its unit tests.
